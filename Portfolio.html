@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<title>Моё портфолио</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#cfcfcf">
+	<header>
+		<h1 align="center">Мой сайт портфолио</h1>
+		<address>
+			<div>Страна: Казахстан</div>
+			<div>Город: Шымкент</div>
+			<div>Телефон: 8-775-199-94-12</div>
+		</address>
+	</header>
+			<hr color="red">
+	<main>
+		<div class="left-col">
+			<section>
+				<aside>
+				<div>
+					<form action="auth,php" method="post">
+						<input type="text" name="name" id="name" placeholder="Введите логин">
+						<input type="password" name="pswrd" maxlength="20" minlength="5" id="pass" placeholder="Введите пароль ">
+						<input type="submit" id="submit" value="Войти">
+						<input type="reset">
+					</form>
+					<hr color="red">
+				<div>
+					<h2 class="section-title">Мой контакты</h2>
+					<div>
+						<h3 style="color: blue;">Я в сот. сетях</h3>
+						<ul>
+							<li><a href="http://vk.com/Samandar Alikulov">Я в ВК</a></li>
+							<li><a href="http://facebook.com/Samandar Alikulov">Я в FB</a></li>
+							<li><a href="http://instagram.com/_alikulov_official_">Я в Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+				<div>.....</div>
+				</aside>
+			</section>
+			<section>
+				<nav>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>
+				</nav>
+			</section>
+		</div>
+		<div class="right-col">
+			<section>
+				<div>
+					<h2>Обо мне</h2>
+					<div>
+						<img id="my-ava" src="INSTAKILOGRAM.png" alt="Мой аватар" title="Samandar Alikulov" border="2" width="200" height="200">
+						<figcaption>
+							Моё любимое фото
+						</figcaption>
+					</div>
+					<div>
+						<article>
+							<h3>Моя биография</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.100</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.10</p>
+							<p>Lorem100</p>
+						</article>
+					</div>
+				</div>
+				<div>
+					<h2>Моя статистика</h2>
+					<table border="1" cellpadding="10" cellspacing="1">
+						<tr bgcolor="#cacaca">
+							<th>Достижении в школе</th>
+							<th>Выгранные грамоты</th>
+						</tr>
+						<tr>
+							<th><h5>Лучший ученик</h5></th>
+							<th><h5>27</h5></th>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section>
+				<hr color="red">
+				<h2 class="section-title">Заказать у меня сайт</h2>
+				<form action="order.php" method="post">
+					<label> Имя клиента
+						<input type="text" name="client_name" placeholder="Введите имя">
+					</label>
+					<p><label> 
+						<span>Введите почту</span>
+						<input type="text" name="client_name" placeholder="Введите email">
+					</label></p>
+					<label>
+						<span>Выберите пол:</span>
+						<input type="radio" name="gender" value="male"> М
+						<input type="radio" name="gender" value="female"> Ж
+					</label>
+					<div><label for="">
+							<span>Дополнительные возможности:</span>
+							<input type="checkbox" name="extra" value="adaptive">Адаптивность
+							<input type="checkbox" name="extra" value="hosting">Установка на хостинг
+							<input type="checkbox" name="extra" value="support">Дальнейшая поддержка
+							<input type="checkbox" name="extra" value="admin">Админ-панель
+						</label>
+					</div>
+					<div>
+						<label>
+							<span>Тип сайта</span>
+							<select name="type">
+								<option value="eshop">Интернет магазин</option>
+								<option value="landing">Ландинг</option>
+								<option value="card">Сайт-визитка</option>
+								<option value="mail">Электронная почта</option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<label>
+							<span>Приложите эскиз</span>
+							<input type="file" name="file">
+						</label>
+					</div>
+					<div>
+						<label>
+							<span>Ваш коментарий</span>
+							<textarea name="comment" cols="30" rows="10" maxlength="150"></textarea>
+						</label>
+					</div>
+					<input type="hidden" name="time" value="time_count">
+					<div>
+						<button name="submit">Отправить</button>
+						<input type="reset" value="Сбросить">
+					</div>
+				</form>
+			</section>
+		</div>
+	</main>
+	<footer>
+
+		<hr color="red">
+		<center><div>Это мой сайт.Пожалуйста,не копируйте его</div></center>
+	</footer>
+
+</body>
+</html>	
